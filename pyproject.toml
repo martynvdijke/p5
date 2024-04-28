@@ -2,24 +2,26 @@
 name = "p5"
 version = "0.8.4"
 description = "p5 is a Python library that provides high level drawing functionality to help you quickly create simulations and interactive art using Python"
-authors = ["Your Name <you@example.com>"]
+authors = ["Abhik Pal <theabhikpal@gmail.com>"]
 readme = "README.rst"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-freetype-py = "2.1.0.post1"
-glfw = ">=2.5.9"
-pillow = "9.0.1"
-vispy = "0.10.0"
-pyopengl-accelerate = "3.1.7"
-pyopengl = "3.1.6"
-requests = ">=2.25.0"
+freetype-py = "^2.1.0"
+glfw = "^2.5.9"
+pillow = "^9.0.1"
+vispy = "^0.10.0"
+pyopengl-accelerate = "^3.1.7"
+pyopengl = "^3.1.6"
+requests = "^2.25.0"
 numpy = [    
     {version = "*", python = "^3.8"},
-    {version = "~1.21.6", python = "=3.7"},
+    {version = "^1.21.6", python = "=3.7"},
 ]
-dataclasses = {version = "^0.8", python = "=3.6"}
-skia-python = ">=85.0"
+dataclasses = [
+    {version = "^0.8", python = "3.6"}
+]
+skia-python = "^87.5"
 
 
 [tool.poetry.group.dev.dependencies]
